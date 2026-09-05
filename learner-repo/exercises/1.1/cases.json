@@ -1,0 +1,23 @@
+[
+  {
+    "inputs": {
+      "title": "coast",
+      "km": 12
+    },
+    "output": "coast: 12 km"
+  },
+  {
+    "inputs": {
+      "title": "forest",
+      "km": 0
+    },
+    "output": "forest: 0 km"
+  },
+  {
+    "inputs": {
+      "title": "S\u00e3o Bento",
+      "km": 27
+    },
+    "output": "S\u00e3o Bento: 27 km"
+  }
+]

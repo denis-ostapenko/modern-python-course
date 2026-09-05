@@ -1,0 +1,138 @@
+[
+  {
+    "id": "0.1",
+    "path": "00-start-here/01-first-run.md",
+    "title": "Your first Python run",
+    "minutes": "10 to 15",
+    "exercise": null,
+    "unit": "0"
+  },
+  {
+    "id": "0.2",
+    "path": "00-start-here/02-real-workspace.md",
+    "title": "Your real workspace",
+    "minutes": "35 to 60",
+    "exercise": null,
+    "unit": "0"
+  },
+  {
+    "id": "1.1",
+    "path": "01-core-language/01-values-and-expressions.md",
+    "title": "Values and expressions",
+    "minutes": "50 to 65",
+    "exercise": "1.1",
+    "unit": "1"
+  },
+  {
+    "id": "1.2",
+    "path": "01-core-language/02-decisions.md",
+    "title": "Input and decisions",
+    "minutes": "55 to 70",
+    "exercise": "1.2",
+    "unit": "1"
+  },
+  {
+    "id": "1.3",
+    "path": "01-core-language/03-collections.md",
+    "title": "Lists and records",
+    "minutes": "55 to 70",
+    "exercise": "1.3",
+    "unit": "1"
+  },
+  {
+    "id": "1.4",
+    "path": "01-core-language/04-iteration.md",
+    "title": "Loops and running totals",
+    "minutes": "60 to 75",
+    "exercise": "1.4",
+    "unit": "1"
+  },
+  {
+    "id": "1.5",
+    "path": "01-core-language/05-functions.md",
+    "title": "Functions and data flow",
+    "minutes": "65 to 80",
+    "exercise": "1.5",
+    "unit": "1"
+  },
+  {
+    "id": "2.1",
+    "path": "02-reliable-programs/01-errors-and-debugger.md",
+    "title": "Debug from evidence",
+    "minutes": "60 to 75",
+    "exercise": "2.1",
+    "unit": "2"
+  },
+  {
+    "id": "2.2",
+    "path": "02-reliable-programs/02-files-and-json.md",
+    "title": "Files that survive a run",
+    "minutes": "60 to 75",
+    "exercise": "2.2",
+    "unit": "2"
+  },
+  {
+    "id": "2.3",
+    "path": "02-reliable-programs/03-tests-and-ruff.md",
+    "title": "Tests that can catch a defect",
+    "minutes": "65 to 80",
+    "exercise": "2.3",
+    "unit": "2"
+  },
+  {
+    "id": "2.4",
+    "path": "02-reliable-programs/04-modules-and-uv-projects.md",
+    "title": "Modules and a reproducible project",
+    "minutes": "65 to 80",
+    "exercise": "2.4",
+    "unit": "2"
+  },
+  {
+    "id": "2.5",
+    "path": "02-reliable-programs/05-types-and-dataclasses.md",
+    "title": "Clear records and useful types",
+    "minutes": "65 to 80",
+    "exercise": "2.5",
+    "unit": "2"
+  },
+  {
+    "id": "3.1",
+    "path": "03-program-design/01-command-line-application.md",
+    "title": "A command another person can use",
+    "minutes": "65 to 80",
+    "exercise": "3.1",
+    "unit": "3"
+  },
+  {
+    "id": "3.2",
+    "path": "03-program-design/02-git-diffs-and-recovery.md",
+    "title": "Review and recover a change",
+    "minutes": "60 to 75",
+    "exercise": "3.2",
+    "unit": "3"
+  },
+  {
+    "id": "3.3",
+    "path": "03-program-design/03-github-collaboration-and-ci.md",
+    "title": "An issue, a review and a merge",
+    "minutes": "90 to 120",
+    "exercise": "3.3",
+    "unit": "3"
+  },
+  {
+    "id": "3.4",
+    "path": "03-program-design/04-working-with-a-coding-agent.md",
+    "title": "Keep control of an agent change",
+    "minutes": "70 to 90",
+    "exercise": "3.4",
+    "unit": "3"
+  },
+  {
+    "id": "4.1",
+    "path": "04-capstone/01-brief.md",
+    "title": "Build a project of your own",
+    "minutes": "480 to 720",
+    "exercise": null,
+    "unit": "4"
+  }
+]

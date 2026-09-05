@@ -1,0 +1,19 @@
+[
+  {
+    "function": "total_pages",
+    "args": [
+      [
+        12,
+        8
+      ]
+    ],
+    "result": 20
+  },
+  {
+    "function": "total_pages",
+    "args": [
+      []
+    ],
+    "result": 0
+  }
+]

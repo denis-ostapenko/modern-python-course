@@ -1,0 +1,32 @@
+[
+  {
+    "inputs": {
+      "raw": " 3 "
+    },
+    "output": "accepted"
+  },
+  {
+    "inputs": {
+      "raw": "0"
+    },
+    "output": "rejected"
+  },
+  {
+    "inputs": {
+      "raw": "-2"
+    },
+    "output": "rejected"
+  },
+  {
+    "inputs": {
+      "raw": "hello"
+    },
+    "output": "rejected"
+  },
+  {
+    "inputs": {
+      "raw": ""
+    },
+    "output": "rejected"
+  }
+]

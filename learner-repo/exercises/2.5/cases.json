@@ -1,0 +1,24 @@
+[
+  {
+    "function": "book_dict",
+    "args": [
+      "Small Steps",
+      120
+    ],
+    "result": {
+      "title": "Small Steps",
+      "pages": 120
+    }
+  },
+  {
+    "function": "book_dict",
+    "args": [
+      "\u00c1gua",
+      0
+    ],
+    "result": {
+      "title": "\u00c1gua",
+      "pages": 0
+    }
+  }
+]

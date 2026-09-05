@@ -1,0 +1,26 @@
+[
+  {
+    "file": "[\"A book\"]",
+    "result": [
+      "A book"
+    ]
+  },
+  {
+    "file": null,
+    "result": []
+  },
+  {
+    "file": "[\"S\u00e3o Bento\"]",
+    "result": [
+      "S\u00e3o Bento"
+    ]
+  },
+  {
+    "file": "broken",
+    "error": "ValueError"
+  },
+  {
+    "file": "{}",
+    "error": "ValueError"
+  }
+]

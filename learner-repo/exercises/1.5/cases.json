@@ -1,0 +1,23 @@
+[
+  {
+    "function": "shipping",
+    "args": [
+      3
+    ],
+    "result": 11
+  },
+  {
+    "function": "shipping",
+    "args": [
+      0
+    ],
+    "result": 0
+  },
+  {
+    "function": "shipping",
+    "args": [
+      7
+    ],
+    "result": 19
+  }
+]

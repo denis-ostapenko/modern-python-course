@@ -1,0 +1,17 @@
+/reference/
+/planning/
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.playwright-cli/
+.DS_Store
+app/public/downloads/
+app/public/runtime/
+app/src/catalog.json
+learner-repo/work/
+learner-repo/evidence/
+release/

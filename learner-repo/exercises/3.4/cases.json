@@ -1,0 +1,23 @@
+[
+  {
+    "function": "clean_tag",
+    "args": [
+      " Work "
+    ],
+    "result": "work"
+  },
+  {
+    "function": "clean_tag",
+    "args": [
+      "A B"
+    ],
+    "result": "a b"
+  },
+  {
+    "function": "clean_tag",
+    "args": [
+      ""
+    ],
+    "result": ""
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "argv": [
+      "3"
+    ],
+    "output": "6",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "0"
+    ],
+    "output": "0",
+    "exit": 0
+  },
+  {
+    "argv": [
+      "bad"
+    ],
+    "exit": 2,
+    "stderr_contains": "invalid int value"
+  },
+  {
+    "argv": [
+      "--help"
+    ],
+    "exit": 0,
+    "stdout_contains": "usage:"
+  }
+]

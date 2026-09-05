@@ -1,0 +1,28 @@
+[
+  {
+    "function": "average",
+    "args": [
+      [
+        2,
+        4
+      ]
+    ],
+    "result": 3
+  },
+  {
+    "function": "average",
+    "args": [
+      []
+    ],
+    "result": 0
+  },
+  {
+    "function": "average",
+    "args": [
+      [
+        5
+      ]
+    ],
+    "result": 5
+  }
+]

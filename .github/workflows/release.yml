@@ -1,0 +1,76 @@
+name: Verify and publish course
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: course-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: app/package-lock.json
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+      - run: npm ci
+        working-directory: app
+      - run: npm test
+        working-directory: app
+      - run: python scripts/validate_course.py
+      - run: python scripts/verify_learning_assets.py
+      - run: npm run build
+        working-directory: app
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: app/dist
+  learner:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.12', '3.13', '3.14']
+    env:
+      UV_PYTHON: ${{ matrix.python }}
+      PYTHONUTF8: '1'
+    defaults:
+      run:
+        working-directory: learner-repo
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - uses: astral-sh/setup-uv@v9
+        with:
+          version: '0.10.9'
+      - run: uv sync --frozen
+      - run: uv run pytest
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run pyright
+      - run: uv run python ../scripts/verify_workflows.py
+  publish:
+    if: github.event_name != 'pull_request'
+    needs: [site, learner]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v6
+      - uses: actions/deploy-pages@v5
+        id: deployment

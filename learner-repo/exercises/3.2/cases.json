@@ -1,0 +1,16 @@
+[
+  {
+    "function": "label",
+    "args": [
+      " Reading "
+    ],
+    "result": "reading"
+  },
+  {
+    "function": "label",
+    "args": [
+      "WALKING"
+    ],
+    "result": "walking"
+  }
+]

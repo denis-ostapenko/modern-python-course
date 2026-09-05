@@ -1,0 +1,38 @@
+[
+  {
+    "inputs": {
+      "orders": [
+        {
+          "status": "sent",
+          "count": 3
+        },
+        {
+          "status": "waiting",
+          "count": 7
+        }
+      ]
+    },
+    "output": "3"
+  },
+  {
+    "inputs": {
+      "orders": []
+    },
+    "output": "0"
+  },
+  {
+    "inputs": {
+      "orders": [
+        {
+          "status": "sent",
+          "count": 2
+        },
+        {
+          "status": "sent",
+          "count": 4
+        }
+      ]
+    },
+    "output": "6"
+  }
+]

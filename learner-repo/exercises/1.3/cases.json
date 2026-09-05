@@ -1,0 +1,35 @@
+[
+  {
+    "inputs": {
+      "items": [
+        {
+          "name": "pen",
+          "count": 3
+        },
+        {
+          "name": "book",
+          "count": 5
+        }
+      ],
+      "selected": 1
+    },
+    "output": "book 9 unassigned"
+  },
+  {
+    "inputs": {
+      "items": [
+        {
+          "name": "book",
+          "count": 2,
+          "shelf": "B"
+        },
+        {
+          "name": "pen",
+          "count": 4
+        }
+      ],
+      "selected": 0
+    },
+    "output": "book 9 B"
+  }
+]
