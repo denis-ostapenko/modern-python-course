@@ -96,8 +96,12 @@ def main():
             folder = Path(temporary)
             import os
 
-            os.chdir(folder)
-            execute(folder, answer, cases[args.case])
+            previous = Path.cwd()
+            try:
+                os.chdir(folder)
+                execute(folder, answer, cases[args.case])
+            finally:
+                os.chdir(previous)
         return 0
     chosen = range(len(cases)) if args.extended else range(1)
     failures = 0
